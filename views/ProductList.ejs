@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+</div>
+<ul class=”list-group”>
+<% record.forEach( function( product ) { %>
+<li class=”list-group-item”><%= product.ProductName %></li>
+<% }) %>
+
+</ul>
+<ul>
+     
+    <% for (let i = 1; i < record.length; i++) { %>
+      <a href="/categories/ProductList/?page=<%=i%>"><%=i%></a>
+    <% } %>
+  </ul>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+  }
+
+.center{
+
+  height: 200px;
+  width: 500px;
+  display: block;
+  margin: auto;
+
+  justify-content: center;
+}
+
+  .screen{
+    height: 200px;
+     width: 500px;
+     background-color: bisque;
+     margin: auto;
+  }
+  .category {
+    width: 25%; /* Adjust the width as needed */
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 1px;
+  }
+
+  /* Add responsive styles using media queries */
+  @media (max-width: 768px) {
+    .category {
+      width: 50%; /* Adjust the width for smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .category {
+      width: 100%; /* Adjust the width for smaller screens */
+    }
+  }
+
+.

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/index.css"type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <H1>category</H1>
+  <div class="screen">
+    <h1>display read item</h1>
+   <div>
+  <% results.forEach(function(category) { %>  
+      <div><%= category.CategoryId %></div>
+      <div><%= category.CategoryName %></div>
+  <% }) %>
+</div>
+  </div>
+<br>
+  <div class = "center">
+          <form action="/categories" method="POST">
+            <label for="username">categoryId</label>
+            <input type="text" id="categoryId" name="categoryId" required>
+            <br>
+            <label for="categoryName">categoryName</label>
+            <input type="text" id="categoryName" name="categoryName" required>
+            <br>
+            <button type="submit" name="action" value="Read">Read</button>
+            <button type="submit" name="action" value="save">Save</button>
+            <button type="submit" name="action" value="update">Update</button>
+            <button type="submit" name="action" value="delete">Delete</button>
+               </form>
+</div>
+</body>
+</html>
