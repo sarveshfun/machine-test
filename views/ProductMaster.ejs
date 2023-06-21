@@ -14,10 +14,10 @@
       <% productlist.forEach(function(category) { %>
 
         <div class="category">
-          <div><%= category.categoryId %></div>
-          <div><%= category.categoryName %></div>
-          <div><%= category.ProductId %></div>
-          <div><%= category.ProductName %></div>
+          <div>CategoryId:<%= category.CategoryId %></div>
+          <div>CategoryName:<%= category.CategoryName %></div>
+          <div>ProductId:<%= category.ProductId %></div>
+          <div>ProductName:<%= category.ProductName %></div>
         </div>
       <% }) %>
     </div>
@@ -50,7 +50,7 @@
 <div class =center>
     <form action="/categories/ProductMaster" method="POST">
       <label for="ProductId">categoryName</label>
-        <input type="text" id="categoryName" name="categoryName" required>
+        <input type="text" id="categoryName" name="categoryName" >
         <br>
         <label for="ProductId">Productid</label>
         <input type="text" id="ProductId" name="ProductId" required>

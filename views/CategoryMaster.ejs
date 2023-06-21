@@ -12,8 +12,8 @@
     <h1>display read item</h1>
    <div>
   <% results.forEach(function(category) { %>  
-      <div><%= category.CategoryId %></div>
-      <div><%= category.CategoryName %></div>
+      <div>CategoryId:<%= category.CategoryId %></div>
+      <div>CategoryName:<%= category.CategoryName %></div>
   <% }) %>
 </div>
   </div>
@@ -24,7 +24,7 @@
             <input type="text" id="categoryId" name="categoryId" required>
             <br>
             <label for="categoryName">categoryName</label>
-            <input type="text" id="categoryName" name="categoryName" required>
+            <input type="text" id="categoryName" name="categoryName" >
             <br>
             <button type="submit" name="action" value="Read">Read</button>
             <button type="submit" name="action" value="save">Save</button>

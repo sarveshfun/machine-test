@@ -1,3 +1,8 @@
+body{
+  height: 100%;
+}
+
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -10,21 +15,25 @@
   width: 500px;
   display: block;
   margin: auto;
-
-  justify-content: center;
 }
 
   .screen{
     height: 200px;
      width: 500px;
+  
      background-color: bisque;
      margin: auto;
+     overflow: auto;
   }
   .category {
     width: 25%; /* Adjust the width as needed */
     padding: 10px;
     box-sizing: border-box;
     border-radius: 1px;
+  }
+  .productlist {
+    height: 100vh
+
   }
 
   /* Add responsive styles using media queries */
@@ -40,4 +49,3 @@
     }
   }
 
-.

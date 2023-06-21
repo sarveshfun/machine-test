@@ -4,6 +4,7 @@ const connection = require('../model/model');
 
 const get_category_master =(req, res) => {
      const results = [];
+     72
     res.render("CategoryMaster.ejs", { results });
   }
 
@@ -63,7 +64,7 @@ function category_master(request,res){
           }else {
              
             res.render( 'CategoryMaster.ejs',{results})
-             console.log("hi")
+            res.status(200)
 
           }
 
@@ -123,7 +124,6 @@ case "update" :
                                console.log(err)
                            }else {
                              
-                               console.log(results)
                                 res.status(200)
                 
                            }

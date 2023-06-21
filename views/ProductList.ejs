@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/productlist.css"type="text/css">
     <title>Document</title>
 </head>
 <body>
     
 
-</div>
-<ul class=”list-group”>
-<% record.forEach( function( product ) { %>
-<li class=”list-group-item”><%= product.ProductName %></li>
-<% }) %>
 
-</ul>
-<ul>
-     
+
+  <div >
+    <% record.forEach(function(product) { %>
+      <div class="product-box">
+        <div class="product-item">ProductId:<%= product.CategoryId %></div>
+        <div class="product-item">  CategoryName:<%= product.CategoryName %></div>
+        <div class="product-item">  ProductId:<%= product.ProductId %></div>
+        <div class="product-item">ProductName:<%= product.ProductName %></div>
+
+      </div>
+    
+    <% }) %>
+    <!-- <ul>  
+      <% for (let i = 1; i < record.length; i++) { %>
+        <a href="/categories/ProductList/?page=<%=i%>"><%=i%></a>
+      <% } %> -->
+  </div>
+  <ul>  
     <% for (let i = 1; i < record.length; i++) { %>
       <a href="/categories/ProductList/?page=<%=i%>"><%=i%></a>
     <% } %>
   </ul>
-
+   
+</div>
 
 </div>
 </body>
